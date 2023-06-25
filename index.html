@@ -3,64 +3,35 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" type="text/css" href="index.css">
         <title>Sean Chung</title>
     </head>
     <body>
-        <p> Hello, welcome to Sean Chung's Website! </p>
-        <nav>
-            <a href="./scripts/education.html"> Education </a>
-            <a href="./scripts/experiences.html"> Experiences </a>
-            <a href="./scripts/contact.html"> Contact Me </a>
-        </nav>
-
-<style>
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-    }
-    
-    .topnav {
-      overflow: hidden;
-      background-color: #333;
-    }
-    
-    .topnav a {
-      float: left;
-      color: #f2f2f2;
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
-      font-size: 17px;
-    }
-    
-    .topnav a:hover {
-      background-color: #ddd;
-      color: black;
-    }
-    
-    .topnav a.active {
-      background-color: #04AA6D;
-      color: white;
-    }
-    </style>
-    </head>
-    <body>
-    
-    <div class="topnav">
-      <a class="active" href="#home">Home</a>
-      <a href="#news">News</a>
-      <a href="#contact">Contact</a>
-      <a href="#about">About</a>
-    </div>
-    
-    <div style="padding-left:16px">
-      <h2>Top Navigation Example</h2>
-      <p>Some content..</p>
-    </div>
-    
-    </body>
-    </html>
-    
-    
+        <div>
+            <nav class="top-nav">
+                <a class="links" href="./scripts/contact.html"> Contact Me </a>
+                <a class="links" href="./scripts/experiences.html"> Experiences </a>
+                <a class="links" href="./scripts/education.html"> Education </a>
+                <a class="links" href="./index.html"> Home </a>
+                <a class="name-nav"> Sean Chung </a> 
+            </nav>
+        <div class="description">
+            <p class="desc-header"> Sean Chung </p> 
+            <p class="desc-title"> New Graduate </p>
+            <p class="desc-text"> I am a passionate and curious individual who is <br>
+                dedicated to developing end to end products <br> 
+                that will create great social impact. </p>
+            <p class="desc-text"> When I'm not working on developing <br>
+                my career, I love playing basketball and <br>
+                No Limit Texas Hold 'Em Poker, and watching films! </p>
+        </div>
+        <img class="p1" src="./images/profile_picture.jpg" alt="Profile Picture" width="343.75" height="500">
+        </div>
+        <div class="education">
+            <p class="edu-title"> Education </p>
+            <img class="p2" src="./images/berkeley_logo.png" alt="Berkeley Picture" width="200" height="200">
+            <p class="edu-school"> University of California, Berkeley (2019-2023) </p>
+            <p class="edu-degree"> Bachelor of Arts in Data Science </p>
+        </div>
     </body>
 </html>
