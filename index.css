@@ -148,7 +148,7 @@ section{
 }
 
 .edu-title { 
-    margin-top: 150px;
+    margin-top: 100px;
     font-size: 60px;
     font-weight: 450;
     color: rgb(255,255,255);
@@ -159,48 +159,36 @@ section{
     margin-left: 120px;
 }
 
+.edu-sub {
+    display: flex;
+    flex-direction: column; 
+    margin-left: 350px;
+    margin-top: -215px;
+}
 .edu-school { 
     color:rgb(255,255,255);
     font-weight: 500;
-    font-size:32px;
-}
-
-/*
-.edu-title { 
-    margin: auto;
-    text-align: center;
-    font-size: 60px;
-    font-weight: 450;   
-}
-
-.edu-school { 
-    color: rgb(255, 255, 255);
-    font-weight: 500;
-    font-size: 26px;
-    margin: 70px auto auto 300px;
+    font-size: 25px;
 }
 
 .edu-degree { 
-    color: rgb(255, 255, 255);
-    font-size: 18px;
-    margin: auto 300px;
+    color: rgb(255,255,255);
+    font-size: 20px;
+    margin-top: -20px;
 }
 
-.edu-desc { 
+.edu-text { 
     color: rgb(255,255,255);
-    font-size: 16px;
-    margin: 10px auto auto 300px;
-} 
+    font-size:18px;
+    margin-top: -10px;
+}
 
- .exp-title { 
+.exp-title { 
+    margin-top: 100px;
     color: rgb(255,255,255);
-    font-size: 
-} 
-
-
-  */
-
-
+    font-size: 60px;
+    text-align: center;
+}
 
 
 
