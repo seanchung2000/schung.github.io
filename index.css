@@ -9,15 +9,21 @@ body {
     overflow-y: auto;
 }
 
-.top-nav {
+section{ 
+    scroll-behavior: smooth;
+}
+
+.nav {
+    position: fixed;
     overflow: hidden;
     background-color: rgb(59, 71, 91);
-    margin-top: 17px;
-    margin-bottom: 100px;
     width: 100%;
+    height: 70px;
+    top: 0;
+    transition: transform 0.2s;
 }
-  
-.top-nav a {
+
+.nav a {
     box-sizing: border-box;
     float: right;
     color: rgb(255, 255, 255);
@@ -25,78 +31,218 @@ body {
     padding: 20px 5px;
     text-decoration: none;
     font-size: 18px;
-    margin-right: 100px;
     font-weight: 400;
+    margin-right: 100px;
+    margin-top: 5px;
 }
   
-.top-nav a.links:hover {
+.nav a.links:hover {
     background-color: rgb(180, 218, 252);
     color: black;
     border-radius: 20px;
 }
   
-.top-nav a.active {
+.nav a.active {
     background-color: #04AA6D;
     color: white;
 }
 
-.top-nav a.name-nav { 
+.nav a.name-nav { 
     float: left;
     padding-left: 100px;
+    font-size: 25px;
+}
+
+.nav--hidden { 
+    transform: translateY(-75px);
 }
 
 .description { 
-    float: left;
-    margin: 75px auto auto 95px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 125px;
+    padding-left: 90px;
 }
 
 .desc-header { 
     font-size: 50px;
     font-weight: 550;
     color: rgb(255, 255, 255);
-    margin: auto auto -10px auto;
+    
 }
 
-.desc-title { 
+.desc-title {
     font-style: italic;
     font-size: 20px;
     color: rgb(223, 223, 223);
+    margin-top: -50px;
 }
 
 .desc-text { 
-    font-size: 28px;
+    margin-top: -10px;
+    font-size: 25px;
     color: rgb(255, 255, 255);
+}
+
+.desc-links { 
+    display:flex;
+    margin-left: 90px; 
+}
+
+.link { 
+    border-radius: 100%;
+    margin-right: 15px;
 }
 
 .p1 { 
     float: right;
-    margin-right: 5%;
+    margin-top: -450px;
+    margin-right: 90px;
     border-radius: 20%;
 }
 
-.p2 { 
-    margin-top: 30px;
-    float: left;
-    margin-left: 5%;
+
+.p3 { 
+    margin: 50px auto auto 90px;
+}
+
+.p4 { 
+    margin: 150px auto auto 90px;
+}
+
+.skills-title { 
+    margin-top: 250px;
+    font-size: 60px;
+    font-weight: 450;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.skills-sub {
+    display: flex;
+    flex-direction: column;
+    color: rgb(255,255,255);
+    float: right;
+    margin-right: 90px;
+}
+
+.skills-subtitle-1 { 
+    font-size: 35px;
+    margin-bottom: 23px;
+}
+
+.skills-text { 
+    font-size: 20px;
+}
+
+.skills-icons { 
+    display: flex;
+    margin-top: 15px;
+    justify-content: space-around;
+}
+
+.skills-subtitle-2 { 
+    font-size: 35px;
+    margin-bottom: 23px;
+    margin-top: 150px;
 }
 
 .edu-title { 
-    margin: 700px auto auto auto;
+    margin-top: 150px;
+    font-size: 60px;
+    font-weight: 450;
+    color: rgb(255,255,255);
     text-align: center;
-    font-size: 50px;
+}
+
+.edu-logo { 
+    margin-left: 120px;
+}
+
+.edu-school { 
+    color:rgb(255,255,255);
+    font-weight: 500;
+    font-size:32px;
+}
+
+/*
+.edu-title { 
+    margin: auto;
+    text-align: center;
+    font-size: 60px;
     font-weight: 450;   
-    color: rgb(255, 255, 255);
 }
 
 .edu-school { 
     color: rgb(255, 255, 255);
+    font-weight: 500;
     font-size: 26px;
     margin: 70px auto auto 300px;
 }
 
 .edu-degree { 
     color: rgb(255, 255, 255);
-    font-size: 21px;
+    font-size: 18px;
     margin: auto 300px;
 }
 
+.edu-desc { 
+    color: rgb(255,255,255);
+    font-size: 16px;
+    margin: 10px auto auto 300px;
+} 
+
+ .exp-title { 
+    color: rgb(255,255,255);
+    font-size: 
+} 
+
+
+  */
+
+
+
+
+
+
+
+/* @media screen and (max-width: 600px) { 
+
+}
+
+@media screen and (min-width:600) { 
+    
+} */
+
+@media screen and (min-width: 768px){
+    /* .desc-text { 
+        font-size: 20px;
+    } */
+    .edu-title { 
+        color: rgb(255, 255, 0);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .edu-title { 
+        color: rgb(255, 0, 255);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .edu-title{ 
+        color: rgb(0,255,255);
+    }
+}
+
+@media screen and (min-width: 1440px) { 
+    /* .desc-text { 
+        font-size: 28px;
+    } */
+    .edu-title{ 
+        color: rgb(255,255,255);
+    }
+}
+
+
+/* my macbook pixel width is 1440px /*
