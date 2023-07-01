@@ -7,6 +7,7 @@ body {
     background-color: rgb(59, 71, 91);
     font-family: "Montserrat";
     overflow-y: auto;
+    padding-bottom: 200px;
 }
 
 section{ 
@@ -58,9 +59,13 @@ section{
 }
 
 .description { 
+    /* width: 800px;
+    height: 365px;
+    border: 2px solid rgb(0,0,0); */
     display: flex;
     flex-direction: column;
     padding-top: 125px;
+    /* padding-left: clamp(5.625rem, 0rem + 6.25vw, 13.4375rem); */
     padding-left: 90px;
 }
 
@@ -95,6 +100,9 @@ section{
 }
 
 .p1 { 
+    /* width: 412.5;
+    height:600;
+    border: 2px solid black; */
     float: right;
     margin-top: -450px;
     margin-right: 90px;
@@ -108,6 +116,13 @@ section{
 
 .p4 { 
     margin: 150px auto auto 90px;
+}
+
+.p5 { 
+    margin-top: -100px;
+    margin-right: 250px;
+    float: right;
+    border-radius: 20%;
 }
 
 .skills-title { 
@@ -190,6 +205,293 @@ section{
     text-align: center;
 }
 
+.experiences { 
+    display: flex;
+    flex-direction: row;
+
+}
+
+.exp-1 { 
+    width: 380px;
+    height: 153px;
+    flex-shrink: 0;
+    border-radius: 20px 20px 0px 0px; 
+    background: #019B5A;
+    box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.25);
+    margin-left: 90px;
+    margin-right: 55px;
+}
+
+.exp-1-comp { 
+    width: 207px;
+    height: 37px;
+    color: #FFF;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: normal;
+    margin-left: 90px;
+}
+
+.exp-1a { 
+    position:absolute;
+    margin-top: -10px;
+    margin-left: 132px;
+    width: 115px;
+    height: 115px;
+    flex-shrink: 0;
+    border-radius: 100px;
+    border: 2px solid #019B5A;
+    background: url(./images/limex_logo.png), lightgray 50% / cover no-repeat;
+}
+
+.exp-1-title { 
+    position: absolute;
+    width: 340px;
+    height: 44px;
+    color: #000;
+    font-size: 22px;
+    font-weight: 450;
+    margin-left: 45px;
+    margin-top: 125px;
+}
+
+.exp-1-date { 
+    position: absolute;
+    width: 223px;
+    height: 35px;
+    font-size: 20px;
+    font-weight: 450;
+    margin-left: 95px;
+    margin-top: 160px;
+}
+
+.exp-1-text { 
+    position: absolute;
+    text-align: center;
+    width: 315px;
+    height: 243px;
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 200px;
+    margin-left: 35px;
+
+}
+
+.exp-2 { 
+    width: 380px;
+    height: 153px;
+    flex-shrink: 0;
+    border-radius: 20px 20px 0px 0px; 
+    background: #00375E;
+    box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.25);
+    margin-right: 55px;
+}
+
+.exp-2-comp { 
+    width: 207px;
+    height: 37px;
+    color: #FFF;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: normal;
+    margin-left: 90px;
+}
+
+.exp-2a { 
+    position:absolute;
+    margin-top: -10px;
+    margin-left: 132px;
+    width: 115px;
+    height: 115px;
+    flex-shrink: 0;
+    border-radius: 100px;
+    border: 2px solid rgb(13,40,75);
+    background: url(./images/west_monroe_logo.png), lightgray 50% / cover no-repeat;
+}
+
+.exp-2-title { 
+    position: absolute;
+    text-align: center;
+    width: 340px;
+    height: 44px;
+    color: #000;
+    font-size: 22px;
+    font-weight: 450;
+    margin-left: 25px;
+    margin-top: 125px;
+}
+
+.exp-2-date { 
+    position: absolute;
+    width: 223px;
+    height: 35px;
+    font-size: 20px;
+    font-weight: 450;
+    margin-left: 87px;
+    margin-top: 180px;
+}
+
+.exp-2-text { 
+    position: absolute;
+    text-align: center;
+    width: 315px;
+    height: 243px;
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 215px;
+    margin-left: 35px;
+}
+
+.exp-3 { 
+    width: 380px;
+    height: 153px;
+    flex-shrink: 0;
+    border-radius: 20px 20px 0px 0px; 
+    background: #196FB2;
+    box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.25);
+}
+
+.exp-3-comp { 
+    width: 207px;
+    height: 37px;
+    color: #FFF;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: normal;
+    margin-left: 115px;
+}
+
+.exp-3a { 
+    position:absolute;
+    margin-top: -10px;
+    margin-left: 132px;
+    width: 115px;
+    height: 115px;
+    flex-shrink: 0;
+    border-radius: 100px;
+    border: 2px solid rgb(13,40,75);
+    background: url(./images/staysense_logo.png), lightgray 50% / cover no-repeat;
+}
+
+.exp-3-title { 
+    position: absolute;
+    width: 340px;
+    height: 44px;
+    color: #000;
+    font-size: 22px;
+    font-weight: 450;
+    margin-left: 50px;
+    margin-top: 125px;
+}
+
+.exp-3-date { 
+    position: absolute;
+    width: 223px;
+    height: 35px;
+    font-size: 20px;
+    font-weight: 450;
+    margin-left: 85px;
+    margin-top: 160px;
+}
+
+.exp-b {
+    width: 380px;
+    height: 400px;
+    flex-shrink: 0;
+    border-radius: 0px 0px 20px 20px;
+    background: #FFF;
+    margin-top: 80px;
+    margin-bottom: 2000px;
+    box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.25);
+}
+
+.exp-4 { 
+    margin-top: 650px;
+    margin-left: -1250px;
+    width: 380px;
+    height: 153px;
+    flex-shrink: 0;
+    border-radius: 20px 20px 0px 0px; 
+    background: #018CA2;
+    box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.25);
+}
+
+.exp-4-comp { 
+    width: 207px;
+    height: 37px;
+    color: #FFF;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: normal;
+    margin-left: 133px;
+}
+
+.exp-4a { 
+    position:absolute;
+    margin-top: -10px;
+    margin-left: 132px;
+    width: 115px;
+    height: 115px;
+    flex-shrink: 0;
+    border-radius: 100px;
+    border: 2px solid #018CA2;
+    background: url(./images/epidata_logo.png), lightgray 50% / cover no-repeat;
+}
+
+.exp-4-title { 
+    position: absolute;
+    width: 340px;
+    height: 44px;
+    color: #000;
+    font-size: 22px;
+    font-weight: 450;
+    margin-left: 75px;
+    margin-top: 125px;
+}
+
+.exp-4-date { 
+    position: absolute;
+    width: 223px;
+    height: 35px;
+    font-size: 20px;
+    font-weight: 450;
+    margin-left: 90px;
+    margin-top: 160px;
+}
+
+.contact-title { 
+    color: #FFF;
+    font-size: 60px;
+    font-weight: 450;
+    margin-top: 500px;
+    text-align: center;
+}
+
+.contact-subtitle { 
+    color: #FFF;
+    font-size: 25px;
+    font-weight: 450;
+    margin-top: -50px;
+    text-align: center;
+}
+
+.contact-pin { 
+    margin-left: 90px;   
+}
+
+.contact-location { 
+    margin-top: -32px;
+    margin-left: 125px;
+    color: #FFF;
+    font-size: 20px;
+}
+
+.opp { 
+    color: #FFF;
+    font-size: 20px;
+    margin-left: 90px;
+    margin-top: 30px;
+}
 
 
 
@@ -202,10 +504,7 @@ section{
     
 } */
 
-@media screen and (min-width: 768px){
-    /* .desc-text { 
-        font-size: 20px;
-    } */
+/* @media screen and (min-width: 768px){
     .edu-title { 
         color: rgb(255, 255, 0);
     }
@@ -224,13 +523,13 @@ section{
 }
 
 @media screen and (min-width: 1440px) { 
-    /* .desc-text { 
+    .desc-text { 
         font-size: 28px;
-    } */
+    }
     .edu-title{ 
         color: rgb(255,255,255);
     }
-}
+} */
 
 
 /* my macbook pixel width is 1440px /*
