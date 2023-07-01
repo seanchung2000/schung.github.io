@@ -60,14 +60,10 @@ section{
 }
 
 .description { 
-    /* width: 800px;
-    height: 365px;
-    border: 2px solid rgb(0,0,0); */
     display: flex;
     flex-direction: column;
     padding-top: 125px;
-    /* padding-left: clamp(5.625rem, 0rem + 6.25vw, 13.4375rem); */
-    padding-left: 90px;
+    margin-left: clamp(5.625rem, -35.325rem + 45.5vw, 62.5rem);
 }
 
 .desc-header { 
@@ -92,7 +88,7 @@ section{
 
 .desc-links { 
     display:flex;
-    margin-left: 90px; 
+    margin-left: clamp(5.625rem, -35.325rem + 45.5vw, 62.5rem);
 }
 
 .link { 
@@ -101,27 +97,32 @@ section{
 }
 
 .p1 { 
-    /* width: 412.5;
-    height:600;
-    border: 2px solid black; */
     float: right;
     margin-top: -450px;
-    margin-right: 90px;
+    margin-right: clamp(5.625rem, -35.325rem + 45.5vw, 62.5rem);
     border-radius: 20%;
 }
 
 
 .p3 { 
-    margin: 50px auto auto 90px;
+    margin-top: 50px;
+    margin-left: clamp(5.625rem, -35.325rem + 45.5vw, 62.5rem);
 }
 
 .p4 { 
-    margin: 150px auto auto 90px;
+    margin-top: 150px;
+    margin-left: clamp(5.625rem, -35.325rem + 45.5vw, 62.5rem);
+
 }
 
-.p5 { 
+.p5 {
+    margin-top: 150px;
+    margin-left: clamp(9.375rem, -31.35rem + 45.25vw, 65.9375rem);
+}
+
+.p6 { 
     margin-top: -100px;
-    margin-right: 250px;
+    margin-right: clamp(15.625rem, -19.7rem + 39.25vw, 64.6875rem);
     float: right;
     border-radius: 20%;
 }
@@ -139,7 +140,7 @@ section{
     flex-direction: column;
     color: rgb(255,255,255);
     float: right;
-    margin-right: 90px;
+    margin-right: clamp(5.625rem, -35.325rem + 45.5vw, 62.5rem);
 }
 
 .skills-subtitle-1 { 
@@ -172,13 +173,13 @@ section{
 }
 
 .edu-logo { 
-    margin-left: 120px;
+    margin-left: clamp(7.5rem, -35.475rem + 47.75vw, 67.1875rem);
 }
 
 .edu-sub {
     display: flex;
     flex-direction: column; 
-    margin-left: 350px;
+    margin-left: clamp(21.875rem, -19.75rem + 46.25vw, 79.6875rem);
     margin-top: -215px;
 }
 .edu-school { 
@@ -219,7 +220,7 @@ section{
     border-radius: 20px 20px 0px 0px; 
     background: #019B5A;
     box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.25);
-    margin-left: 90px;
+    margin-left: clamp(5.625rem, -38.7rem + 49.25vw, 67.1875rem);
     margin-right: 55px;
 }
 
@@ -477,12 +478,12 @@ section{
 }
 
 .contact-pin { 
-    margin-left: 90px;   
+    margin-left: clamp(5.625rem, -35.325rem + 45.5vw, 62.5rem);
 }
 
 .contact-location { 
     margin-top: -32px;
-    margin-left: 125px;
+    margin-left: clamp(7.8125rem, -33.1375rem + 45.5vw, 64.6875rem);
     color: #FFF;
     font-size: 20px;
 }
@@ -490,7 +491,7 @@ section{
 .opp { 
     color: #FFF;
     font-size: 20px;
-    margin-left: 90px;
+    margin-left: clamp(5.625rem, -35.325rem + 45.5vw, 62.5rem);
     margin-top: 30px;
 }
 
@@ -533,4 +534,4 @@ section{
 } */
 
 
-/* my macbook pixel width is 1440px /*
+/* my macbook pixel width is 1440px */
