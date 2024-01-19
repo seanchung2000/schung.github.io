@@ -81,7 +81,7 @@ section{
 .desc-header { 
     font-size: clamp(2.1875rem, 0.04473rem + 3.425vw, 3.125rem);
     font-weight: 550;
-    color: rgb(0, 145, 255);
+    color: rgb(0, 255, 17);
     
 }
 
