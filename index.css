@@ -75,10 +75,11 @@ section{
     flex-direction: column;
     padding-top: 125px;
     margin-left: clamp(5.625rem, -35.325rem + 45.5vw, 62.5rem);
+    z-index: 100;
 }
 
 .desc-header { 
-    font-size: 50px;
+    font-size: clamp(2.1875rem, 0.04473rem + 3.425vw, 3.125rem);
     font-weight: 550;
     color: rgb(255, 255, 255);
     
@@ -86,14 +87,14 @@ section{
 
 .desc-title {
     font-style: italic;
-    font-size: 20px;
+    font-size: clamp(0.875rem, 0.01789rem + 1.37vw, 1.25rem);
     color: rgb(223, 223, 223);
-    margin-top: -50px;
+    margin-top: clamp(-2.1875rem, 21.38042rem + -37.671vw, -50px);
 }
 
 .desc-text { 
     margin-top: -10px;
-    font-size: 25px;
+    font-size: clamp(1.125rem, 0.12525rem + 1.598vw, 1.5625rem);
     color: rgb(255, 255, 255);
 }
 
@@ -105,35 +106,46 @@ section{
 .link { 
     border-radius: 100%;
     margin-right: 15px;
+    height: clamp(2.1875rem, 0.04473rem + 3.425vw, 3.125rem);
+    width: clamp(2.1875rem, 0.04473rem + 3.425vw, 3.125rem);
 }
 
 .p1 { 
+    border: 2px solid #000;
+    display:flex;
     float: right;
     margin-top: -450px;
     margin-right: clamp(5.625rem, -35.325rem + 45.5vw, 62.5rem);
     border-radius: 20%;
+    width: 412.5px;
+    height: 600px;
 }
-
 
 .p3 { 
     margin-top: 50px;
     margin-left: clamp(5.625rem, -35.325rem + 45.5vw, 62.5rem);
+    width: clamp(6.25rem, 50%, 37.5rem);
+    height: 400;
 }
 
-.p4 { 
+.p4 {
     margin-top: 150px;
     margin-left: clamp(5.625rem, -35.325rem + 45.5vw, 62.5rem);
-
+    margin-right: 20px;
+    width: clamp(6.25rem, 50%, 37.5rem);;
+    height: 400;
 }
 
 .p5 {
     margin-top: 150px;
     margin-left: clamp(9.375rem, -31.35rem + 45.25vw, 65.9375rem);
+    width: clamp(9.375rem, 100%, 31.5rem);
+    height: clamp(6.25rem, 50%, 31.5rem);
 }
 
 .p6 { 
     margin-top: -100px;
-    margin-right: clamp(15.625rem, -19.7rem + 39.25vw, 64.6875rem);
+    margin-right: clamp(5.625rem, -35.325rem + 45.5vw, 62.5rem);
     float: right;
     border-radius: 20%;
 }
@@ -155,12 +167,12 @@ section{
 }
 
 .skills-subtitle-1 { 
-    font-size: 35px;
+    font-size: clamp(1rem, 0.49448rem + 1.881vw, 2.1875rem);
     margin-bottom: 23px;
 }
 
 .skills-text { 
-    font-size: 20px;
+    font-size: clamp(0.625rem, 0.38594rem + 0.99vw, 1.25rem);
 }
 
 .skills-icons { 
@@ -170,7 +182,7 @@ section{
 }
 
 .skills-subtitle-2 { 
-    font-size: 35px;
+    font-size: clamp(1rem, 0.49448rem + 1.881vw, 2.1875rem);
     margin-bottom: 23px;
     margin-top: 150px;
 }
@@ -188,11 +200,10 @@ section{
 }
 
 .edu-sub {
-    display: flex;
-    flex-direction: column; 
     margin-left: clamp(21.875rem, -19.75rem + 46.25vw, 79.6875rem);
     margin-top: -215px;
 }
+
 .edu-school { 
     color:rgb(255,255,255);
     font-weight: 500;
@@ -207,7 +218,7 @@ section{
 
 .edu-text { 
     color: rgb(255,255,255);
-    font-size:18px;
+    font-size: 18px;
     margin-top: -10px;
 }
 
@@ -221,7 +232,6 @@ section{
 .experiences { 
     display: flex;
     flex-direction: row;
-
 }
 
 .exp-1 { 
@@ -506,43 +516,163 @@ section{
     margin-top: 30px;
 }
 
-
-
-
-/* @media screen and (max-width: 600px) { 
-
-}
-
-@media screen and (min-width:600) { 
+/* @media only screen and (min-width: 1001px) and (max-width:1439px) { 
     
-} */
-
-/* @media screen and (min-width: 768px){
-    .edu-title { 
-        color: rgb(255, 255, 0);
+    .desc-header { 
+        font-size: clamp(1.5625rem, -2.00857rem + 5.708vw, 3.125rem);
     }
-}
 
-@media screen and (min-width: 1024px) {
-    .edu-title { 
-        color: rgb(255, 0, 255);
+    .desc-title {
+        font-size: clamp(0.625rem, -0.8033rem + 2.283vw, 1.25rem);
+        margin-top: clamp(-0.625rem, 97.93221rem + -157.534vw, -43.75rem);
     }
-}
 
-@media screen and (min-width: 1200px) {
-    .edu-title{ 
-        color: rgb(0,255,255);
-    }
-}
-
-@media screen and (min-width: 1440px) { 
     .desc-text { 
-        font-size: 28px;
+        margin-top: -10px;
+        font-size: 25px;
+        color: rgb(255, 255, 255);
     }
-    .edu-title{ 
-        color: rgb(255,255,255);
+
+    .desc-links { 
+        display:flex;
+        margin-left: clamp(5.625rem, -35.325rem + 45.5vw, 62.5rem);
+    }
+
+    .link { 
+        border-radius: 100%;
+        margin-right: 15px;
+    }
+
+    .p1 { 
+        float: right;
+        margin-top: -450px;
+        margin-right: clamp(5.625rem, -35.325rem + 45.5vw, 62.5rem);
+        border-radius: 20%;
+    }
+    
+    .desc-header { 
+        font-size: clamp(1.5625rem, -2.00857rem + 5.708vw, 3.125rem);
+    }
+
+    .desc-title{ 
+        font-size: clamp(0.625rem, -0.8033rem + 2.283vw, 1.25rem);
+    }
+
+    .desc-text{ 
+
     }
 } */
 
+/* testing 1117px*/
 
-/* my macbook pixel width is 1440px */
+@media only screen and (max-width: 1000px){
+    .description { 
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+        width: 50%;
+    }
+
+    .skills-sub{ 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 50%;
+        padding: auto;
+        margin: auto;
+        margin-right: auto;
+        float: none;
+        display: flex;   
+    }
+
+    .p3 {
+        display: flex;
+        justify-content: center;
+        margin-top: auto;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        height: auto;
+    }
+
+    .p4 { 
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: -100px;
+        width: 50%;
+        height: auto;
+    }
+
+    .p5 { 
+        display: flex;
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: -100px;
+        width: 50%;
+        justify-content: center;
+    }
+
+    .edu-logo { 
+        display:flex;
+        width: 15%;
+        height: 15%;
+        margin-left: clamp(7.5rem, -35.475rem + 47.75vw, 67.1875rem);
+    }
+
+    .edu-sub {
+        display:block;
+        justify-content: center;
+        width: 50%;
+        margin-left: clamp(21.875rem, -19.75rem + 46.25vw, 79.6875rem);
+        /* margin-top: -215px; */
+
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    body {
+        padding-bottom: 100px; /* Adjust padding for smaller screens */
+    }
+
+    .description,
+    .skills-sub,
+    .p3,
+    .p4,
+    .p5 {
+        width: 100%; /* Make these sections full width on smaller screens */
+        margin: auto; /* Center the content */
+    }
+
+    .p3,
+    .p4,
+    .p5 {
+        margin-top: 50px; /* Adjust spacing for smaller screens */
+        margin-bottom: 0; /* Reset margin-bottom */
+    }
+
+    .edu-logo {
+        width: 30%; /* Adjust logo size for smaller screens */
+        height: auto; /* Allow logo height to adjust proportionally */
+        margin-left: auto; /* Center the logo */
+        margin-right: auto;
+    }
+
+    .edu-sub {
+        margin-top: 0; /* Reset margin-top */
+    }
+}
+
+/* Media query for screens between 1001px and 1439px */
+@media only screen and (min-width: 1001px) and (max-width: 1439px) {
+    /* Adjust styles for this screen size if needed */
+}
+
+/* Media query for screens smaller than 1440px (your existing styles for larger screens) */
+@media only screen and (max-width: 1439px) {
+    /* ... (existing styles) ... */
+}
