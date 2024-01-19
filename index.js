@@ -1,64 +1,41 @@
-import React, { useEffect, useState } from 'react';
+const nav = document.querySelector(".nav");
+let lastScrollY = window.scrollY;
+// function scroll() { 
+//   const nav = document.querySelector(".nav");
+//   let lastScrollY = window.scrollY;
+//   window.addEventListener("scroll");
+//   if (lastScrollY < window.scrollY) {
+//     nav.classList.add("nav--hidden");
+//   } else { 
+//     nav.classList.remove("nav--hidden");
+//   }
+//   lastScrollY = window.scrollY;
+//   }
 
-const App = () => {
-  const [navHidden, setNavHidden] = useState(false);
+window.addEventListener("scroll", () => { 
+  if (lastScrollY < window.scrollY) {
+    nav.classList.add("nav--hidden");
+  } else { 
+    nav.classList.remove("nav--hidden");
+  }
+  lastScrollY = window.scrollY;
+})
 
-  const handleScroll = () => {
-    const currentScrollY = window.scrollY;
+function reveal() {
+  var reveals = document.querySelectorAll(".reveal");
 
-    if (lastScrollY < currentScrollY) {
-      setNavHidden(true);
-    } else {
-      setNavHidden(false);
-    }
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals[i].getBoundingClientRect().top;
+    var elementVisible = 150;
 
-    lastScrollY = currentScrollY;
-  };
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("active");
+    } 
+  }
+}
 
-  useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
+window.addEventListener("scroll", reveal);
 
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []); // Only add/remove the event listener on mount/unmount
-
-  const reveal = () => {
-    const reveals = document.querySelectorAll('.reveal');
-
-    reveals.forEach((element) => {
-      const windowHeight = window.innerHeight;
-      const elementTop = element.getBoundingClientRect().top;
-      const elementVisible = 150;
-
-      if (elementTop < windowHeight - elementVisible) {
-        element.classList.add('active');
-      }
-    });
-  };
-
-  useEffect(() => {
-    window.addEventListener('scroll', reveal);
-
-    // To check the scroll position on the page load
-    reveal();
-
-    return () => {
-      window.removeEventListener('scroll', reveal);
-    };
-  }, []); // Only add/remove the event listener on mount/unmount
-
-  return (
-    <div>
-      {/* Your React components go here */}
-      <div className={navHidden ? 'nav nav--hidden' : 'nav'}>
-        {/* Navigation content */}
-      </div>
-      <div className="reveal">
-        {/* Your reveal content */}
-      </div>
-    </div>
-  );
-};
-
-export default App;
+// To check the scroll position on the page load
+reveal();
