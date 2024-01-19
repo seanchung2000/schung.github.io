@@ -516,7 +516,7 @@ section{
     margin-top: 30px;
 }
 
-/* @media only screen and (min-width: 1001px) and (max-width:1439px) { 
+@media only screen and (min-width: 1001px) and (max-width:1439px) { 
     
     .desc-header { 
         font-size: clamp(1.5625rem, -2.00857rem + 5.708vw, 3.125rem);
@@ -561,7 +561,7 @@ section{
     .desc-text{ 
 
     }
-} */
+}
 
 /* testing 1117px*/
 
