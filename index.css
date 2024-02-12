@@ -10,7 +10,7 @@ body {
     padding-bottom: 200px;
 }
 
-section {
+section{ 
     scroll-behavior: smooth;
 }
 
@@ -37,244 +37,606 @@ section {
 }
 
 .nav a {
+    box-sizing: border-box;
+    float: right;
     color: rgb(255, 255, 255);
     text-align: center;
+    padding: 20px 5px;
     text-decoration: none;
     font-size: 18px;
     font-weight: 400;
+    margin-right: 100px;
+    margin-top: 5px;
 }
-
+  
 .nav a.links:hover {
     background-color: rgb(180, 218, 252);
     color: black;
     border-radius: 20px;
 }
-
+  
 .nav a.active {
     background-color: #04AA6D;
     color: white;
 }
 
-.nav a.name-nav {
+.nav a.name-nav { 
+    float: left;
+    padding-left: 100px;
     font-size: 25px;
 }
 
-.nav--hidden {
+.nav--hidden { 
     transform: translateY(-75px);
 }
 
-.description {
-    padding-top: 10vh;
-    padding-bottom: 5vh;
-    text-align: center;
+.description { 
+    display: flex;
+    flex-direction: column;
+    padding-top: 125px;
+    margin-left: clamp(5.625rem, -35.325rem + 45.5vw, 62.5rem);
+    z-index: 100;
 }
 
-.desc-header {
-    font-size: clamp(2rem, 3vw, 3.125rem);
+.desc-header { 
+    font-size: clamp(2.1875rem, 0.04473rem + 3.425vw, 3.125rem);
     font-weight: 550;
     color: rgb(242, 255, 0);
+    
 }
 
 .desc-title {
     font-style: italic;
-    font-size: clamp(1rem, 1vw, 1.25rem);
+    font-size: clamp(0.875rem, 0.01789rem + 1.37vw, 1.25rem);
     color: rgb(223, 223, 223);
+    margin-top: clamp(-2.1875rem, 21.38042rem + -37.671vw, -50px);
 }
 
-.desc-text {
-    font-size: clamp(1rem, 1vw, 1.5625rem);
+.desc-text { 
+    margin-top: -10px;
+    font-size: clamp(1.125rem, 0.12525rem + 1.598vw, 1.5625rem);
     color: rgb(255, 255, 255);
 }
 
-.desc-links {
-    display: flex;
-    justify-content: center;
-    margin-top: 2vh;
+.desc-links { 
+    display:flex;
+    margin-left: clamp(5.625rem, -35.325rem + 45.5vw, 62.5rem);
 }
 
-.link {
+.link { 
     border-radius: 100%;
     margin-right: 15px;
-    height: 3vh;
-    width: 3vh;
+    height: clamp(2.1875rem, 0.04473rem + 3.425vw, 3.125rem);
+    width: clamp(2.1875rem, 0.04473rem + 3.425vw, 3.125rem);
 }
 
-.p1 {
+.p1 { 
     border: 2px solid #000;
+    display:flex;
+    float: right;
+    margin-top: -450px;
+    margin-right: clamp(5.625rem, -35.325rem + 45.5vw, 62.5rem);
     border-radius: 20%;
-    width: 30vw;
-    height: 40vh;
+    width: 412.5px;
+    height: 600px;
 }
 
-.p3,
-.p4,
-.p5,
-.p6 {
-    width: 30vw;
-    height: 40vh;
+.p3 { 
+    margin-top: 50px;
+    margin-left: clamp(5.625rem, -35.325rem + 45.5vw, 62.5rem);
+    width: clamp(6.25rem, 50%, 37.5rem);
+    height: 400;
 }
 
-.skills-title {
-    margin-top: 10vh;
-    font-size: clamp(3rem, 5vw, 5rem);
+.p4 {
+    margin-top: 150px;
+    margin-left: clamp(5.625rem, -35.325rem + 45.5vw, 62.5rem);
+    margin-right: 20px;
+    width: clamp(6.25rem, 50%, 37.5rem);;
+    height: 400;
+}
+
+.p5 {
+    margin-top: 150px;
+    margin-left: clamp(9.375rem, -31.35rem + 45.25vw, 65.9375rem);
+    width: clamp(9.375rem, 100%, 31.5rem);
+    height: clamp(6.25rem, 50%, 31.5rem);
+}
+
+.p6 { 
+    margin-top: -100px;
+    margin-right: clamp(5.625rem, -35.325rem + 45.5vw, 62.5rem);
+    float: right;
+    border-radius: 20%;
+}
+
+.skills-title { 
+    margin-top: 250px;
+    font-size: 60px;
     font-weight: 450;
     color: rgb(255, 255, 255);
+    text-align: center;
 }
 
 .skills-sub {
-    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    color: rgb(255,255,255);
+    float: right;
+    margin-right: clamp(5.625rem, -35.325rem + 45.5vw, 62.5rem);
 }
 
-.skills-subtitle-1,
-.skills-subtitle-2 {
-    font-size: clamp(1rem, 2vw, 2.1875rem);
-    margin-bottom: 2vh;
-    margin-top: 5vh;
+.skills-subtitle-1 { 
+    font-size: clamp(1rem, 0.49448rem + 1.881vw, 2.1875rem);
+    margin-bottom: 23px;
 }
 
-.skills-text {
-    font-size: clamp(0.625rem, 1vw, 1.25rem);
+.skills-text { 
+    font-size: clamp(0.625rem, 0.38594rem + 0.99vw, 1.25rem);
 }
 
-.edu-title {
-    margin-top: 10vh;
-    font-size: clamp(3rem, 5vw, 5rem);
+.skills-icons { 
+    display: flex;
+    margin-top: 15px;
+    justify-content: space-around;
+}
+
+.skills-subtitle-2 { 
+    font-size: clamp(1rem, 0.49448rem + 1.881vw, 2.1875rem);
+    margin-bottom: 23px;
+    margin-top: 150px;
+}
+
+.edu-title { 
+    margin-top: 100px;
+    font-size: 60px;
     font-weight: 450;
-    color: rgb(255, 255, 255);
+    color: rgb(255,255,255);
+    text-align: center;
 }
 
-.edu-logo {
-    width: 15%;
+.edu-logo { 
+    margin-left: clamp(7.5rem, -35.475rem + 47.75vw, 67.1875rem);
 }
 
 .edu-sub {
-    color: rgb(255, 255, 255);
-    margin-top: -10vh;
+    margin-left: clamp(21.875rem, -19.75rem + 46.25vw, 79.6875rem);
+    margin-top: -215px;
 }
 
-.exp-title {
-    margin-top: 10vh;
-    color: rgb(255, 255, 255);
-    font-size: clamp(3rem, 5vw, 5rem);
+.edu-school { 
+    color:rgb(255,255,255);
+    font-weight: 500;
+    font-size: 25px;
 }
 
-.experiences {
+.edu-degree { 
+    color: rgb(255,255,255);
+    font-size: 20px;
+    margin-top: -20px;
+}
+
+.edu-text { 
+    color: rgb(255,255,255);
+    font-size: 18px;
+    margin-top: -10px;
+}
+
+.exp-title { 
+    margin-top: 100px;
+    color: rgb(255,255,255);
+    font-size: 60px;
+    text-align: center;
+}
+
+.experiences { 
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    flex-direction: row;
 }
 
-.exp-card {
-    width: 30vw;
-    height: 40vh;
-    margin-top: 5vh;
-    border-radius: 20px;
+.exp-1 { 
+    width: 380px;
+    height: 153px;
+    flex-shrink: 0;
+    border-radius: 20px 20px 0px 0px; 
     background: #019B5A;
-    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.25);
+    margin-left: clamp(5.625rem, -38.7rem + 49.25vw, 67.1875rem);
+    margin-right: 55px;
 }
 
-.exp-comp {
+.exp-1-comp { 
+    width: 207px;
+    height: 37px;
     color: #FFF;
-    font-size: clamp(1.5rem, 2.5vw, 2.5rem);
+    font-size: 30px;
     font-weight: 500;
     line-height: normal;
-    text-align: center;
+    margin-left: 90px;
 }
 
-.exp-title,
-.exp-date {
+.exp-1a { 
+    position:absolute;
+    margin-top: -10px;
+    margin-left: 132px;
+    width: 115px;
+    height: 115px;
+    flex-shrink: 0;
+    border-radius: 100px;
+    border: 2px solid #019B5A;
+    background: url(./images/limex_logo.png), lightgray 50% / cover no-repeat;
+}
+
+.exp-1-title { 
+    position: absolute;
+    width: 340px;
+    height: 44px;
     color: #000;
-    font-size: clamp(1.5rem, 2.5vw, 2.5rem);
+    font-size: 22px;
     font-weight: 450;
-    text-align: center;
+    margin-left: 45px;
+    margin-top: 125px;
 }
 
-.exp-text {
-    font-size: clamp(1rem, 1.5vw, 1.5rem);
+.exp-1-date { 
+    position: absolute;
+    width: 223px;
+    height: 35px;
+    font-size: 20px;
+    font-weight: 450;
+    margin-left: 95px;
+    margin-top: 160px;
+}
+
+.exp-1-text { 
+    position: absolute;
+    text-align: center;
+    width: 315px;
+    height: 243px;
+    font-size: 18px;
     font-weight: 400;
-    text-align: center;
+    margin-top: 200px;
+    margin-left: 35px;
+
 }
 
-.contact-title {
+.exp-2 { 
+    width: 380px;
+    height: 153px;
+    flex-shrink: 0;
+    border-radius: 20px 20px 0px 0px; 
+    background: #00375E;
+    box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.25);
+    margin-right: 55px;
+}
+
+.exp-2-comp { 
+    width: 225px;
+    height: 37px;
     color: #FFF;
-    font-size: clamp(3rem, 5vw, 5rem);
+    font-size: 30px;
+    font-weight: 500;
+    line-height: normal;
+    margin-left: 90px;
+}
+
+.exp-2a { 
+    position: absolute;
+    margin-top: -10px;
+    margin-left: 132px;
+    width: 115px;
+    height: 115px;
+    flex-shrink: 0;
+    border-radius: 100px;
+    border: 2px solid rgb(13,40,75);
+    background: url(./images/west_monroe_logo.png), lightgray 50% / cover no-repeat;
+}
+
+.exp-2-title { 
+    position: absolute;
+    text-align: center;
+    width: 340px;
+    height: 44px;
+    color: #000;
+    font-size: 22px;
     font-weight: 450;
-    margin-top: 10vh;
-    text-align: center;
+    margin-left: 25px;
+    margin-top: 125px;
 }
 
-.contact-subtitle {
-    color: #FFF;
-    font-size: clamp(1.5rem, 2.5vw, 2.5rem);
+.exp-2-date { 
+    position: absolute;
+    width: 223px;
+    height: 35px;
+    font-size: 20px;
     font-weight: 450;
-    margin-top: -5vh;
+    margin-left: 87px;
+    margin-top: 180px;
+}
+
+.exp-2-text { 
+    position: absolute;
     text-align: center;
+    width: 315px;
+    height: 243px;
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 215px;
+    margin-left: 35px;
 }
 
-.contact-pin {
-    margin-left: auto;
-    margin-right: auto;
+.exp-3 { 
+    width: 380px;
+    height: 153px;
+    flex-shrink: 0;
+    border-radius: 20px 20px 0px 0px; 
+    background: #196FB2;
+    box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.25);
 }
 
-.contact-location {
-    margin-top: -2vh;
+.exp-3-comp { 
+    width: 207px;
+    height: 37px;
     color: #FFF;
-    font-size: clamp(1rem, 1.5vw, 1.5rem);
-    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: normal;
+    margin-left: 115px;
 }
 
-.opp {
+.exp-3a { 
+    position:absolute;
+    margin-top: -10px;
+    margin-left: 132px;
+    width: 115px;
+    height: 115px;
+    flex-shrink: 0;
+    border-radius: 100px;
+    border: 2px solid rgb(13,40,75);
+    background: url(./images/staysense_logo.png), lightgray 50% / cover no-repeat;
+}
+
+.exp-3-title { 
+    position: absolute;
+    width: 340px;
+    height: 44px;
+    color: #000;
+    font-size: 22px;
+    font-weight: 450;
+    margin-left: 50px;
+    margin-top: 125px;
+}
+
+.exp-3-date { 
+    position: absolute;
+    width: 223px;
+    height: 35px;
+    font-size: 20px;
+    font-weight: 450;
+    margin-left: 85px;
+    margin-top: 160px;
+}
+
+.exp-b {
+    width: 380px;
+    height: 400px;
+    flex-shrink: 0;
+    border-radius: 0px 0px 20px 20px;
+    background: #FFF;
+    margin-top: 80px;
+    margin-bottom: 2000px;
+    box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.25);
+}
+
+.exp-4 { 
+    margin-top: 650px;
+    margin-left: -1250px;
+    width: 380px;
+    height: 153px;
+    flex-shrink: 0;
+    border-radius: 20px 20px 0px 0px; 
+    background: #018CA2;
+    box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.25);
+}
+
+.exp-4-comp { 
+    width: 207px;
+    height: 37px;
     color: #FFF;
-    font-size: clamp(1rem, 1.5vw, 1.5rem);
-    margin-top: 2vh;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: normal;
+    margin-left: 133px;
+}
+
+.exp-4a { 
+    position:absolute;
+    margin-top: -10px;
+    margin-left: 132px;
+    width: 115px;
+    height: 115px;
+    flex-shrink: 0;
+    border-radius: 100px;
+    border: 2px solid #018CA2;
+    background: url(./images/epidata_logo.png), lightgray 50% / cover no-repeat;
+}
+
+.exp-4-title { 
+    position: absolute;
+    width: 340px;
+    height: 44px;
+    color: #000;
+    font-size: 22px;
+    font-weight: 450;
+    margin-left: 75px;
+    margin-top: 125px;
+}
+
+.exp-4-date { 
+    position: absolute;
+    width: 223px;
+    height: 35px;
+    font-size: 20px;
+    font-weight: 450;
+    margin-left: 90px;
+    margin-top: 160px;
+}
+
+.contact-title { 
+    color: #FFF;
+    font-size: 60px;
+    font-weight: 450;
+    margin-top: 500px;
     text-align: center;
 }
 
-@media only screen and (max-width: 768px) {
-    .nav a {
-        margin-right: 10px;
+.contact-subtitle { 
+    color: #FFF;
+    font-size: 25px;
+    font-weight: 450;
+    margin-top: -50px;
+    text-align: center;
+}
+
+.contact-pin { 
+    margin-left: clamp(5.625rem, -35.325rem + 45.5vw, 62.5rem);
+}
+
+.contact-location { 
+    margin-top: -32px;
+    margin-left: clamp(7.8125rem, -33.1375rem + 45.5vw, 64.6875rem);
+    color: #FFF;
+    font-size: 20px;
+}
+
+.opp { 
+    color: #FFF;
+    font-size: 20px;
+    margin-left: clamp(5.625rem, -35.325rem + 45.5vw, 62.5rem);
+    margin-top: 30px;
+}
+
+@media only screen and (min-width: 1001px) and (max-width:1439px) { 
+    
+    .desc-header { 
+        font-size: clamp(1.5625rem, -2.00857rem + 5.708vw, 3.125rem);
     }
 
-    .nav a.name-nav {
-        padding-left: 10px;
+    .desc-title {
+        font-size: clamp(0.625rem, -0.8033rem + 2.283vw, 1.25rem);
+        margin-top: clamp(-0.625rem, 97.93221rem + -157.534vw, -43.75rem);
     }
 
-    .nav a.links {
-        margin-right: 10px;
+    .desc-text { 
+        margin-top: -10px;
+        font-size: 25px;
+        color: rgb(255, 255, 255);
     }
 
-    .description,
-    .skills-sub,
-    .exp-sub,
-    .contact-subtitle,
-    .contact-location,
-    .opp {
-        width: 90%;
+    .desc-links { 
+        display:flex;
+        margin-left: clamp(5.625rem, -35.325rem + 45.5vw, 62.5rem);
+    }
+
+    .link { 
+        border-radius: 100%;
+        margin-right: 15px;
+    }
+
+    .p1 { 
+        float: right;
+        margin-top: -450px;
+        margin-right: clamp(5.625rem, -35.325rem + 45.5vw, 62.5rem);
+        border-radius: 20%;
+    }
+    
+    .desc-header { 
+        font-size: clamp(1.5625rem, -2.00857rem + 5.708vw, 3.125rem);
+    }
+
+    .desc-title{ 
+        font-size: clamp(0.625rem, -0.8033rem + 2.283vw, 1.25rem);
+    }
+
+    .desc-text{ 
+
+    }
+}
+
+/* testing 1117px*/
+
+@media only screen and (max-width: 1000px){
+    .description { 
+        display: flex;
         margin-left: auto;
         margin-right: auto;
+        justify-content: center;
+        width: 50%;
     }
 
-    .p1,
-    .p3,
-    .p4,
-    .p5,
-    .p6 {
-        width: 80%;
+    .skills-sub{ 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 50%;
+        padding: auto;
+        margin: auto;
+        margin-right: auto;
+        float: none;
+        display: flex;   
+    }
+
+    .p3 {
+        display: flex;
+        justify-content: center;
+        margin-top: auto;
         margin-left: auto;
         margin-right: auto;
+        width: 50%;
+        height: auto;
     }
 
-    .edu-logo {
-        width: 40%;
+    .p4 { 
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: -100px;
+        width: 50%;
+        height: auto;
+    }
+
+    .p5 { 
+        display: flex;
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: -100px;
+        width: 50%;
+        justify-content: center;
+    }
+
+    .edu-logo { 
+        display:flex;
+        width: 15%;
+        height: 15%;
+        margin-left: clamp(7.5rem, -35.475rem + 47.75vw, 67.1875rem);
     }
 
     .edu-sub {
-        width: 90%;
-        margin-left: auto;
-        margin-right: auto;
-    }
+        display:block;
+        justify-content: center;
+        width: 50%;
+        margin-left: clamp(21.875rem, -19.75rem + 46.25vw, 79.6875rem);
+        /* margin-top: -215px; */
 
-    .exp-card {
-        width: 80%;
     }
 }
+
+/*
+To-do: make media queries for 0px-1000px and 1001px-1439px custom (>1440px is already made) 
+        make dropdown menu for navigation bar 
+*/
+
+/* my macbook pixel width is 1440px */
