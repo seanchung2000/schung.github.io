@@ -10,7 +10,7 @@ body {
     padding-bottom: 200px;
 }
 
-section{ 
+section { 
     scroll-behavior: smooth;
 }
 
@@ -515,7 +515,7 @@ section{
     margin-left: clamp(5.625rem, -35.325rem + 45.5vw, 62.5rem);
     margin-top: 30px;
 }
-
+/* 
 @media only screen and (min-width: 1001px) and (max-width:1439px) { 
     
     .desc-header { 
@@ -563,7 +563,8 @@ section{
     }
 }
 
-/* testing 1117px*/
+testing 1117px
+
 
 @media only screen and (max-width: 1000px){
     .description { 
@@ -629,10 +630,17 @@ section{
         justify-content: center;
         width: 50%;
         margin-left: clamp(21.875rem, -19.75rem + 46.25vw, 79.6875rem);
-        /* margin-top: -215px; */
 
     }
-}
+} 
+*/
+@media (max-width: 1380px) {
+    html,
+    body {
+      font-size: rem;
+      line-height: normal;
+    }
+  }
 
 /*
 To-do: make media queries for 0px-1000px and 1001px-1439px custom (>1440px is already made) 
